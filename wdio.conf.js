@@ -15,7 +15,7 @@ exports.config = {
     ],
     logLevel: 'trace',
     bail: 0,
-    baseUrl: 'https://duybanh-f195-1.cybozu-dev.com',
+    baseUrl: process.env.BASE_URL,
     waitforTimeout: 10000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
