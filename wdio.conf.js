@@ -1,4 +1,4 @@
-require('@babel/register');
+require('@babel/register')
 
 exports.config = {
   runner: 'local',
@@ -24,11 +24,11 @@ exports.config = {
   reporters: ['spec', ['junit', {
     outputDir: './report/',
     outputFileFormat(opts) { // optional
-      return `results-${opts.cid}.xml`;
+      return `results-${opts.cid}.xml`
     },
   }]],
   mochaOpts: {
     ui: 'bdd',
     timeout: 60000,
   },
-};
+}

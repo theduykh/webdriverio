@@ -32,8 +32,9 @@
         ],
         "semi": [
             "error",
-            "always"
+            "never"
         ],
+        "eqeqeq": ["error","always"],
         "no-console": "off"
     }
 }

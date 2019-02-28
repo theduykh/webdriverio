@@ -1,6 +1,6 @@
 class ElementUtils {
   element(seletor) {
-    return $(seletor);
+    return $(seletor)
   }
 }
-module.exports = new ElementUtils();
+module.exports = new ElementUtils()
