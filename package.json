@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "eslint-check": "eslint .",
+    "eslint-fix": "eslint --fix",
     "test": "wdio"
   },
   "keywords": [],
@@ -28,6 +30,9 @@
     "@wdio/mocha-framework": "^5.6.0",
     "@wdio/spec-reporter": "^5.6.0",
     "@wdio/sync": "^5.6.0",
-    "@wdio/utils": "^5.6.0"
+    "@wdio/utils": "^5.6.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
   }
 }

@@ -1,7 +1,6 @@
 class ElementUtils {
-    element(seletor) {
-        return $(seletor);
-    }
-
+  element(seletor) {
+    return $(seletor);
+  }
 }
 module.exports = new ElementUtils();
