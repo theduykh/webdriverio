@@ -21,6 +21,8 @@ jobs:
       - run:
           name: test
           command: npm test wdio.conf.js
+      - store_test_results:
+          path: report
 workflows:
   version: 2
   test:
