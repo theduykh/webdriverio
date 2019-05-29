@@ -13,3 +13,6 @@ npm install
 ```
 npm test wdio.conf.js
 ```
+
+## CircleCI
+https://circleci.com/gh/theduykh/webdriverio/tree/master
