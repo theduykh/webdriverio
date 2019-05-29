@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-       - image: circleci/node:10.16.0
+       - image: circleci/node:10.16.0-chrome
     steps:
       - checkout
       - run:
@@ -13,6 +13,6 @@ jobs:
           command: npm test wdio.conf.js
 workflows:
   version: 2
-  build_and_test:
+  test:
     jobs:
       - test
