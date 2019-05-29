@@ -5,22 +5,29 @@
     },
     "extends": "eslint:recommended",
     "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly",
-        "browser": "writable",
-        "it": "readonly",
-        "describe": "readonly",
-        "$": "readonly",
-        "$$": "readonly"
+        "ElementUtils": "readonly"
     },
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "rules": {
+        "no-undef": "off",
         "indent": [
             "error",
             2
+        ],
+        "max-len": [
+            "warn",
+            120,
+            2,
+            {
+                "ignoreUrls": true,
+                "ignoreComments": true,
+                "ignoreRegExpLiterals": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true
+            }
         ],
         "linebreak-style": [
             "error",
@@ -32,9 +39,12 @@
         ],
         "semi": [
             "error",
-            "never"
+            "always"
         ],
-        "eqeqeq": ["error","always"],
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
         "no-console": "off"
     }
 }
