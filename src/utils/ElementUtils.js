@@ -1,6 +1,9 @@
 class ElementUtils {
-  element(seletor) {
-    return $(seletor)
+
+  element(selector, timeout = 30000) {
+    browser.$(selector).waitForDisplayed(timeout, false, 'Element not found ' + selector);
+    return browser.$(selector);
   }
 }
-module.exports = new ElementUtils()
+
+module.exports = new ElementUtils();
