@@ -5,13 +5,16 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: 'npm install'
+      - run:
+          name: Install npm
+          command: npm install
   test:
     docker:
        - image: circleci/node:4.8.2
     steps:
-      - run_test
-      - run: 'npm test wdio.conf.js'
+      - run:
+          name: Install npm
+          command: npm test wdio.conf.js
 workflows:
   version: 2
   build_and_test:
