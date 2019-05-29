@@ -13,7 +13,7 @@ jobs:
        - image: circleci/node:4.8.2
     steps:
       - run:
-          name: Install npm
+          name: test
           command: npm test wdio.conf.js
 workflows:
   version: 2
