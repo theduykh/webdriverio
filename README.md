@@ -2,7 +2,7 @@
 
 **0. Preparation**
   - Nodejs
-  - Chrome browser latest version (75.0)
+  - Chrome browser latest version (70.0~)
 
 **1. Install node modules**
 ```
