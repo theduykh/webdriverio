@@ -1,10 +1,10 @@
-import LoginPage from '../pages/Login'
+import LoginPage from '../pages/Login';
+import { expect } from 'chai';
 
-describe('Test spec 001', () => {
-  it('The first it', () => {
-    browser.url('/')
-    console.log(browser.getTitle())
-    LoginPage.login('cybozu', 'cybozu')
-    console.log(browser.getTitle())
-  })
-})
+describe('Login', () => {
+  it('should login successfully', () => {
+    LoginPage.open().login('tomsmith', 'SuperSecretPassword!');
+    expect(LoginPage.getMessage()).to.includes('You logged into a secure area!');
+    browser.pause(5000);
+  });
+});
