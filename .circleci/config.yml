@@ -2,7 +2,7 @@ version: 2
 jobs:
   test:
     docker:
-       - image: circleci/nodejs:10.16.0-browsers
+      - image: circleci/node:jessie-browsers
     steps:
       - checkout
       - run:
