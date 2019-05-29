@@ -10,7 +10,7 @@ jobs:
     docker:
        - image: circleci/node:4.8.2
     steps:
-      - run test
+      - run_test
       - run: 'npm test wdio.conf.js'
 workflows:
   version: 2
