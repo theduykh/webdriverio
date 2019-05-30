@@ -1,4 +1,4 @@
-require('@babel/register')
+require('@babel/register');
 
 exports.config = {
   runner: 'local',
@@ -26,9 +26,9 @@ exports.config = {
   reporters: [
     'spec',
     ['junit', {
-      outputDir: './report/',
+      outputDir: './report/junit/',
       outputFileFormat(opts) {
-        return `results-${opts.cid}.xml`
+        return `results-${opts.cid}.xml`;
       },
     }]],
   mochaOpts: {
@@ -59,4 +59,4 @@ exports.config = {
   before() {
     browser.setWindowSize(1360, 768);
   },
-}
+};

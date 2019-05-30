@@ -5,9 +5,6 @@ jobs:
       - image: circleci/node:jessie-browsers
     steps:
       - checkout
-      - run: 
-          name: Create test report folder
-          command: mkdir test-reports
       - run:
           name: Download Selenium
           command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
@@ -18,6 +15,9 @@ jobs:
       - run:
           name: Install npm
           command: npm install
+      - run:
+        name: ESlint check
+        command: npm run eslint-check
       - run:
           name: test
           command: npm test wdio.conf.js

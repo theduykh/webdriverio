@@ -1,2 +1,4 @@
-report
-node_modules
+report/
+node_modules/
+errorshots/
+.DS_Store
