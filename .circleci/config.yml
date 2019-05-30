@@ -16,8 +16,8 @@ jobs:
           name: Install npm
           command: npm install
       - run:
-        name: ESlint check
-        command: npm run eslint-check
+          name: ESlint check
+          command: npm run eslint-check
       - run:
           name: test
           command: npm test wdio.conf.js
