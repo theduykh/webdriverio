@@ -1,4 +1,3 @@
-report/
 node_modules/
-errorshots/
-.DS_Store
+report/
+.DS_Store 
