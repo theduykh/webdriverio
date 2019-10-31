@@ -6,23 +6,23 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Make report directory
+          name: Make Report Directory
           command: mkdir report
       - run:
-          name: Download Selenium
+          name: Download Selenium Standalone Server
           command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
       - run:
-          name: Start Selenium
+          name: Start Selenium Standalone Server
           command: java -jar selenium-server-standalone-3.5.3.jar -log report/selenium.log
           background: true
       - run:
-          name: Install npm
+          name: Install Node Modules
           command: npm install
       - run:
-          name: ESlint check
+          name: Execute ESlint Check
           command: npm run eslint-check
       - run:
-          name: test
+          name: Test
           command: npm test wdio.conf.js
       - store_test_results:
           path: report
