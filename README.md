@@ -15,7 +15,7 @@ npm test wdio.conf.js
 ```
 
 ## CircleCI
-https://circleci.com/gh/theduykh/webdriverio/tree/master
+https://app.circleci.com/pipelines/github/theduykh/webdriverio-circleCI
 
 ## Site test
 https://the-internet.herokuapp.com/
